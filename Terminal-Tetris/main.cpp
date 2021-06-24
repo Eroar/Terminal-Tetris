@@ -12,7 +12,7 @@ void show_usage(std::string name)
 		<< "\t-s,--scale SCALE\tSpecify scaling of the game (how big it will appear)" << std::endl << std::endl
 		<< "Controls in game:" << std::endl
 		<< "arrow keys to move the block" << std::endl
-		<< "R and E to rotate the block" << std::endl
+		<< "Z and X to rotate the block" << std::endl
 		<< "Escape to exit the game" << std::endl
 		<< "L-Shift + escape to restart the game"
 

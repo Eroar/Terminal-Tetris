@@ -188,11 +188,11 @@ class Tetris : public Game
 		}
 
 		bool rotated = true;
-		if (getButton(VK_E).justPressed())
+		if (getButton(VK_Z).justPressed())
 		{
 			rotateActiveBlockLeft();
 		}
-		else if (getButton(VK_R).justPressed())
+		else if (getButton(VK_X).justPressed())
 		{
 			rotateActiveBlockRight();
 		}
