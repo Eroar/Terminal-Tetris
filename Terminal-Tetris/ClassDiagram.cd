@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Clock" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAACAAAgE=</HashCode>
+      <FileName>Clock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Character" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAACgAAAAAAAAAACAA=</HashCode>
+      <FileName>Character.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScreenObject" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAAAAAAAEAAAAAAAAAAAEAAAAAAIAAAAAAAQAAAgA=</HashCode>
+      <FileName>ScreenObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TextObject" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>TextObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ScreenFactory" Collapsed="true">
+    <Position X="12.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ScreenFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Screen" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEAAQAAABAAABAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Screen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Surface" Collapsed="true">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QVACAAEAAgAAACACAAAAAAAGAAggQBAAAAAgAAEIAAA=</HashCode>
+      <FileName>Surface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsCharacter" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAQAAEAAAAAAAAAAACAA=</HashCode>
+      <FileName>WindowsCharacter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsCMDScreen" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEAAAAAAAAAAAAAAAAAAAACKACAAAAAAAAEAAAA=</HashCode>
+      <FileName>WindowsCMDScreen.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAAAAAAAAAAQAIEAAAAAAAAAAAAAAAAgECAAAAIA=</HashCode>
+      <FileName>Button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyboard" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Keyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyboardFactory" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>KeyboardFactory.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsKeyboard" Collapsed="true">
+    <Position X="6.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAACAAAAAAA=</HashCode>
+      <FileName>WindowsKeyboard.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAYQQAAAAAgAAGEADQiAAiAIAAQgAAAAQACAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CollidableObject" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAAAAAACAAAAAAAAAAAAgAAAAAAAAAEIAAAAA=</HashCode>
+      <FileName>CollidableObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Matrix2D&lt;T&gt;" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACMEAgAAAGIAEQBQAAAAgAigABAOAAAgAAAAIAI=</HashCode>
+      <FileName>Matrix2D.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LongPiece" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABACAAAAAAAQAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>LongPiece.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlockSpawner" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAABAAAAAA=</HashCode>
+      <FileName>BlockSpawner.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tetris" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AyAgTAQKACAEBCEgIAAIABAAIAUgAAKAABAAIAACEcY=</HashCode>
+      <FileName>Tetris.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="WIN_COLOR" Collapsed="true">
+    <Position X="9" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgAAAKIAIkAiABAIECECAAgAgAgABAAZIYIBAACiAA=</HashCode>
+      <FileName>WindowsCharacter.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

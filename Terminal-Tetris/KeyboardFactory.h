@@ -1,3 +1,4 @@
+/** @file */
 #pragma once
 #include "PlatformIdentifier.h"
 #include "Keyboard.h"
@@ -6,13 +7,21 @@
 #include "WindowsKeyboard.h"
 #endif
 
-class KeyboardFactory {
+/** @brief Class that is used for getting a keyboard based on the OS
+ *  @author Eryk Kściuczyk
+ *  @date June 2021
+*/
+class KeyboardFactory
+{
 public:
-	static Keyboard* makeKeyboard() {
-		if (PLATFORM == WINDOWS_PLATFORM) {
+	static Keyboard *makeKeyboard()
+	{
+		if (PLATFORM == WINDOWS_PLATFORM)
+		{
 			return new WindowsKeyboard();
 		}
-		else {
+		else
+		{
 			throw "Your platform isn't supported";
 		}
 	};

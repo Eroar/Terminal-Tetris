@@ -1,7 +1,9 @@
+/** @file */
 #pragma once
 #include "Character.h"
 
-enum COLOUR
+/** Contains color codes for windows command line */
+enum WIN_COLOR
 {
 	FG_BLACK = 0x0000,
 	FG_DARK_BLUE = 0x0001,
@@ -37,17 +39,20 @@ enum COLOUR
 	BG_WHITE = 0x00F0,
 };
 
-class WindowsCharacter :public Character
+/** @brief Class that is used to represent a windows character in command line
+ *  @author Eryk Kściuczyk
+ *  @date June 2021
+*/
+class WindowsCharacter : public Character
 {
 	short attributes;
-public:
-	WindowsCharacter() :Character(), attributes(COLOUR::FG_WHITE) {};
-	WindowsCharacter(const char _glyph) :Character(_glyph), attributes(COLOUR::FG_WHITE) {};
-	WindowsCharacter(const char _glyph, const short _attributes) :Character(_glyph), attributes(_attributes) {};
-	WindowsCharacter(const WindowsCharacter& c) :Character(c.getGlyph()), attributes(c.attributes) {};
 
+public:
+	WindowsCharacter() : Character(), attributes(WIN_COLOR::FG_WHITE){};
+	WindowsCharacter(const char _glyph) : Character(_glyph), attributes(WIN_COLOR::FG_WHITE){};
+	WindowsCharacter(const char _glyph, const short _attributes) : Character(_glyph), attributes(_attributes){};
+	WindowsCharacter(const WindowsCharacter &c) : Character(c.getGlyph()), attributes(c.attributes){};
 
 	short getAttributes() { return attributes; };
 	void setAttributes(const short newAttributes) { attributes = newAttributes; };
 };
-

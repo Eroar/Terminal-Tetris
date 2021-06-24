@@ -1,3 +1,4 @@
+/** @file */
 #pragma once
 #include "Screen.h"
 #include "PlatformIdentifier.h"
@@ -6,14 +7,22 @@
 #include "WindowsCMDScreen.h"
 #endif
 
-class ScreenFactory {
+/** @brief Class that is used for getting a screen based on the OS
+ *  @author Eryk Kściuczyk
+ *  @date June 2021
+*/
+class ScreenFactory
+{
 public:
-	static Screen* makeScreen(const int _width, const int _height) {
-		if (PLATFORM == WINDOWS_PLATFORM) {
+	static Screen *makeScreen(const int _width, const int _height)
+	{
+		if (PLATFORM == WINDOWS_PLATFORM)
+		{
 
 			return new WindowsCMDScreen(_width, _height);
 		}
-		else {
+		else
+		{
 			throw "Your platform isn't supported";
 		}
 	};

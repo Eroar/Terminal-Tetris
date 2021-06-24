@@ -1,7 +1,9 @@
+/** @file */
 #pragma once
-//From http://www.richelbilderbeek.nl
-//Copied from winuser.h
 
+/** @brief contains windows numbers for keyboard keys */
+
+//Copied from winuser.h
 
 /*
  * Virtual Keys, Standard Set
@@ -11,19 +13,19 @@
 #define VK_CANCEL 0x03
 #define VK_MBUTTON 0x04 /* NOT contiguous with L &amp; RBUTTON */
 
-#if(_WIN32_WINNT >= 0x0500)
+#if (_WIN32_WINNT >= 0x0500)
 #define VK_XBUTTON1 0x05 /* NOT contiguous with L &amp; RBUTTON */
 #define VK_XBUTTON2 0x06 /* NOT contiguous with L &amp; RBUTTON */
-#endif /* _WIN32_WINNT >= 0x0500 */
+#endif					 /* _WIN32_WINNT >= 0x0500 */
 
- /*
+/*
   * 0x07 : unassigned
   */
 
 #define VK_BACK 0x08
 #define VK_TAB 0x09
 
-  /*
+/*
    * 0x0A - 0x0B : reserved
    */
 
@@ -68,8 +70,6 @@
 #define VK_DELETE 0x2E
 #define VK_HELP 0x2F
 
-
-
 #define VK_0 0x30
 #define VK_1 0x31
 #define VK_2 0x32
@@ -81,7 +81,7 @@
 #define VK_8 0x38
 #define VK_9 0x39
 
-   /*
+/*
 	* VK_0 - VK_9 are the same as ASCII '0' - '9' (0x30 - 0x39)
 	* 0x40 : unassigned
 	* VK_A - VK_Z are the same as ASCII 'A' - 'Z' (0x41 - 0x5A)
@@ -117,7 +117,7 @@
 #define VK_RWIN 0x5C
 #define VK_APPS 0x5D
 
-	/*
+/*
 	 * 0x5E : reserved
 	 */
 
@@ -164,32 +164,32 @@
 #define VK_F23 0x86
 #define VK_F24 0x87
 
-	 /*
+/*
 	  * 0x88 - 0x8F : unassigned
 	  */
 
 #define VK_NUMLOCK 0x90
 #define VK_SCROLL 0x91
 
-	  /*
+/*
 	   * NEC PC-9800 kbd definitions
 	   */
 #define VK_OEM_NEC_EQUAL 0x92 // '=' key on numpad
 
-	   /*
+/*
 		* Fujitsu/OASYS kbd definitions
 		*/
-#define VK_OEM_FJ_JISHO 0x92 // 'Dictionary' key
+#define VK_OEM_FJ_JISHO 0x92   // 'Dictionary' key
 #define VK_OEM_FJ_MASSHOU 0x93 // 'Unregister word' key
 #define VK_OEM_FJ_TOUROKU 0x94 // 'Register word' key
-#define VK_OEM_FJ_LOYA 0x95 // 'Left OYAYUBI' key
-#define VK_OEM_FJ_ROYA 0x96 // 'Right OYAYUBI' key
+#define VK_OEM_FJ_LOYA 0x95	   // 'Left OYAYUBI' key
+#define VK_OEM_FJ_ROYA 0x96	   // 'Right OYAYUBI' key
 
-		/*
+/*
 		 * 0x97 - 0x9F : unassigned
 		 */
 
-		 /*
+/*
 		  * VK_L* & VK_R* - left and right Alt, Ctrl and Shift virtual keys.
 		  * Used only as parameters to GetAsyncKeyState() and GetKeyState().
 		  * No other API or message will distinguish left and right keys in this way.
@@ -201,7 +201,7 @@
 #define VK_LMENU 0xA4
 #define VK_RMENU 0xA5
 
-#if(_WIN32_WINNT >= 0x0500)
+#if (_WIN32_WINNT >= 0x0500)
 #define VK_BROWSER_BACK 0xA6
 #define VK_BROWSER_FORWARD 0xA7
 #define VK_BROWSER_REFRESH 0xA8
@@ -224,23 +224,23 @@
 
 #endif /* _WIN32_WINNT >= 0x0500 */
 
-		  /*
+/*
 		   * 0xB8 - 0xB9 : reserved
 		   */
 
-#define VK_OEM_1 0xBA // ';:' for US
-#define VK_OEM_PLUS 0xBB // '+' any country
-#define VK_OEM_COMMA 0xBC // ',' any country
-#define VK_OEM_MINUS 0xBD // '-' any country
+#define VK_OEM_1 0xBA	   // ';:' for US
+#define VK_OEM_PLUS 0xBB   // '+' any country
+#define VK_OEM_COMMA 0xBC  // ',' any country
+#define VK_OEM_MINUS 0xBD  // '-' any country
 #define VK_OEM_PERIOD 0xBE // '.' any country
-#define VK_OEM_2 0xBF // '/?' for US
-#define VK_OEM_3 0xC0 // '`~' for US
+#define VK_OEM_2 0xBF	   // '/?' for US
+#define VK_OEM_3 0xC0	   // '`~' for US
 
-		   /*
+/*
 			* 0xC1 - 0xD7 : reserved
 			*/
 
-			/*
+/*
 			 * 0xD8 - 0xDA : unassigned
 			 */
 
@@ -250,34 +250,33 @@
 #define VK_OEM_7 0xDE // ''"' for US
 #define VK_OEM_8 0xDF
 
-			 /*
+/*
 			  * 0xE0 : reserved
 			  */
 
-			  /*
+/*
 			   * Various extended or enhanced keyboards
 			   */
-#define VK_OEM_AX 0xE1 // 'AX' key on Japanese AX kbd
-#define VK_OEM_102 0xE2 // "<>" or "\|" on RT 102-key kbd.
+#define VK_OEM_AX 0xE1	 // 'AX' key on Japanese AX kbd
+#define VK_OEM_102 0xE2	 // "<>" or "\|" on RT 102-key kbd.
 #define VK_ICO_HELP 0xE3 // Help key on ICO
-#define VK_ICO_00 0xE4 // 00 key on ICO
+#define VK_ICO_00 0xE4	 // 00 key on ICO
 
-#if(WINVER >= 0x0400)
+#if (WINVER >= 0x0400)
 #define VK_PROCESSKEY 0xE5
 #endif /* WINVER >= 0x0400 */
 
 #define VK_ICO_CLEAR 0xE6
 
-
-#if(_WIN32_WINNT >= 0x0500)
+#if (_WIN32_WINNT >= 0x0500)
 #define VK_PACKET 0xE7
 #endif /* _WIN32_WINNT >= 0x0500 */
 
-			   /*
+/*
 				* 0xE8 : unassigned
 				*/
 
-				/*
+/*
 				 * Nokia/Ericsson definitions
 				 */
 #define VK_OEM_RESET 0xE9
@@ -304,6 +303,6 @@
 #define VK_PA1 0xFD
 #define VK_OEM_CLEAR 0xFE
 
-				 /*
+/*
 				  * 0xFF : reserved
 				  */

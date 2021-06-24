@@ -1,3 +1,4 @@
+/** @file */
 #pragma once
 
 #define UNKNOWN_PLATFORM 0
@@ -13,3 +14,5 @@
 #else
 #define PLATFORM UNKNOWN_PLATFORM
 #endif
+
+// Is used to distinguish between platforms
