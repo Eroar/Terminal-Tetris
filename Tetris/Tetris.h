@@ -303,7 +303,7 @@ class Tetris : public Game {
 
 public:
 	Tetris(short _level, unsigned short scale, bool _color)
-		:Game(60, 22 * scale, 22 * scale, L"Tetris by Eryk", scale, true),
+		:Game(60, 22 * scale, 22 * scale, L"Tetris by Eroar", scale, false),
 		color(_color),
 		gameOver(false),
 		startLevel(_level),
